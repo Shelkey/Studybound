@@ -1,66 +1,37 @@
-# Studybound Beta — Privacy Policy
+# Studybound Beta privacy policy
 
-**Effective date:** November 2, 2026  
-**Product:** Studybound Beta (Chrome and compatible Chromium-based browsers)  
-**Privacy and support contact:** [shelkeystudio@gmail.com](mailto:shelkeystudio@gmail.com)
+Last updated: 3 November 2026
 
-Studybound Beta ("Studybound") is an independently developed browser extension that turns supported WaniKani and Bunpro Japanese-language study reviews into role-playing-game battles and progression. Studybound is not affiliated with, endorsed by, or operated by WaniKani or Bunpro.
+## Overview
 
-## 1. Information Studybound processes
+Studybound stores your game progress and study activity locally in your browser. This information is not automatically sent to the developer or to any Studybound-operated server.
 
-After you explicitly enable monitoring, Studybound reads information from supported WaniKani and Bunpro pages as needed for its RPG features. This can include:
+Studybound is an independent browser extension that turns Japanese reviews on WaniKani and Bunpro into RPG gameplay. It is not affiliated with or endorsed by either service. You do not need a Studybound account, and Studybound does not operate a user-account database. Your progress belongs to you; you control whether to export or share it.
 
-- **Study activity:** whether supported review answers are correct or incorrect, review events, study-related question types or levels, and related timestamps.
-- **Website content and context:** limited question metadata, supported-page status and paths, and, where the relevant feature is enabled, Japanese study text or submitted Bunpro text processed temporarily.
-- **Locally generated game data:** character progress, RPG currency, inventory, equipment, unlocks, achievements, combat state, rewards, and performance summaries.
-- **Technical preferences and diagnostics:** monitoring consent, extension preferences, overlay/window positions, local session or event identifiers, connection status and optional diagnostic records.
+## What Data Studybound Uses
 
-Studybound is designed for these two supported study services, not to track browsing across unrelated websites. Some limited supported-page paths and activity timestamps can nevertheless be retained in local game state. It does not intentionally request your WaniKani or Bunpro password, payment details, or personal communications.
+After you enable monitoring, Studybound processes supported review results, correctness, question identifiers and study metadata, such as question type or item level, to power combat and progress. It also uses limited page information, including supported-page paths and connection status, and local identifiers to avoid counting answers twice.
 
-## 2. How information is used
+Optional Study Text Display temporarily processes visible Japanese study text on WaniKani and Japanese answers submitted in Bunpro for cosmetic display. It is off by default. These snippets expire from display after eight seconds and are not saved in game progress. Optional grading diagnostics retain recent review-result metadata, not typed answers.
 
-Studybound uses this information to recognize supported reviews, calculate RPG combat and rewards, show overlays, save game progress, prevent duplicate answer processing, recover timed encounters, and help you troubleshoot the extension. Optional Japanese text display is processed for the user-facing display feature; normally it is transient rather than saved as a typed-answer history.
+## Local Storage and Sharing
 
-Studybound does not use study information for advertising, credit decisions, or unrelated profiling.
+Game progress, settings and limited study activity, including review statistics and recent run summaries, are kept in browser-managed local extension storage. Studybound has no automatic cloud save, analytics, advertising or automatic crash-report upload. It does not read login passwords, authentication cookies or API keys.
 
-## 3. Where information is stored and how long it remains
+WaniKani and Bunpro still communicate with their own servers when you use their websites, under their own privacy policies. Browser installation, updates and other browser services may also involve their providers.
 
-Studybound stores game state and settings primarily in browser-managed extension storage on your device. This can contain progress, activity/performance summaries, some supported-page paths and statuses, timestamps, generated IDs and certain active encounter identifiers. Limited session information is held in browser session storage or memory.
+You can voluntarily export saves or diagnostic reports as locally created JSON files. You choose whether to share them, including with support. Full-save exports are plaintext, not encrypted or anonymous: they may contain progress, activity, timestamps, local identifiers, saved provider paths and additional fields from imported files. Diagnostic reports contain limited result metadata, timestamps and identifiers; they exclude provider paths and study text but are not anonymous. Review files before sharing. A synchronized download folder or your own sharing choices can move them off-device.
 
-Saved progress generally remains until you reset or replace it, remove the extension (subject to browser behavior), or otherwise clear extension storage. Some historical records and diagnostic logs have application limits, but Studybound does not promise a fixed automatic deletion date for all game state. Turning off monitoring stops new review processing but does **not** automatically erase saved progress or previously retained local records.
+Studybound uses data accessed through the extension only for its disclosed gameplay and related functionality, including local diagnostics, consistent with the Chrome Web Store User Data Policy and its Limited Use requirements. It does not sell data or transfer it to data brokers.
 
-## 4. Consent and control
+## Your Choices
 
-Studybound asks for your affirmative consent before activating supported-site review monitoring. You can decline, dismiss the disclosure, or later withdraw consent through **Settings → Privacy & monitoring**. Without consent, Studybound does not activate study monitoring. You can review the disclosure and re-enable monitoring from the same settings area. Withdrawing consent does not automatically delete your saved RPG progress.
+- Enable monitoring through the first-run disclosure. Declining or closing it keeps monitoring disabled.
+- Open **Settings → Privacy & monitoring** to withdraw consent, disable monitoring or enable it again. Withdrawal stops monitoring and clears temporary study evidence; it does not automatically erase historical saved progress.
+- Use **Settings → Save data** to export progress or import a backup. Import replaces progress after confirmation and does not grant monitoring consent.
+- Use **Settings → Reset all progression** to reset RPG progress and ordinary settings. Your consent choice is retained; the separate lobby-class preference may remain.
+- Clear the extension's browser storage or uninstall it to remove browser-held data, subject to browser behavior. Separately downloaded backups must be managed by you. These actions do not delete data held independently by WaniKani or Bunpro.
 
-Studybound provides user-initiated save export/import and game reset options. Save imports do not automatically grant monitoring consent.
+## Contact
 
-## 5. Exports, diagnostics and support
-
-A **full save export** is a plaintext JSON backup of your game state. It may contain game progress, study-activity summaries, timestamps, generated identifiers, limited provider paths/statuses, and additional fields preserved from an imported save. Check the file before sharing it or storing it in a shared or cloud-synchronized folder.
-
-An optional **diagnostic export** is also user-initiated and requires confirmation. It is minimized to extension/version information and limited adapter/diagnostic event fields, such as source, status, results, event identifiers, question type and timestamps. It is not guaranteed to be anonymous; timing and identifiers may still reveal usage patterns. Studybound does not automatically upload either export to its developer.
-
-If you contact **shelkeystudio@gmail.com**, the information you include in your email and any attachments you choose to send will be received for the purpose of responding to your inquiry. Please do not send full save files or other potentially sensitive information unless necessary and you agree to share it. You may contact this address to ask about support correspondence or request its deletion, subject to applicable obligations. No automatic support-message retention period is promised here.
-
-## 6. Sharing and third-party services
-
-Based on the current Studybound Beta implementation, the extension does **not** automatically transmit your game progress, review results or diagnostics to a Studybound-operated server. It does not sell user data or transfer it to advertisers or data brokers. Any transfer that occurs because you voluntarily share an export or email support is initiated by you.
-
-WaniKani, Bunpro, your browser, your operating system, and any email or file-hosting service you use operate under their own terms and privacy practices. Studybound does not control their handling of data.
-
-## 7. Security
-
-Studybound restricts supported-site monitoring to its disclosed purpose, uses browser extension isolation and permission controls, and requires consent before processing reviews. **Browser-managed local storage and exported JSON files are not protected by Studybound-managed encryption at rest.** Anyone who gains access to your browser profile, computer or exported backups may be able to read them. Protect your device and avoid sharing sensitive exports unnecessarily.
-
-## 8. Chrome Web Store Limited Use
-
-Studybound's use of information obtained through Chrome extension APIs complies with the **Chrome Web Store User Data Policy**, including its **Limited Use** requirements. Data is used to provide and maintain the extension's disclosed Japanese-study RPG features and directly related diagnostics. Studybound does not sell user data, use it for personalized advertising, or transfer it for creditworthiness or lending purposes. Human review of user-provided support material is limited to information you explicitly choose to share for assistance, or other circumstances allowed by applicable policy and law.
-
-## 9. Changes to this policy
-
-This policy may be updated when Studybound's functionality or data practices change. The current version will be available through the extension's published privacy-policy page. Material changes to data handling will be disclosed as required before any newly covered processing occurs.
-
-## 10. Contact
-
-For privacy questions, support requests or concerns about Studybound Beta, email **[shelkeystudio@gmail.com](mailto:shelkeystudio@gmail.com)**.
+For privacy questions or support, contact the **Studybound developer** at **shelkeystudio@gmail.com**.
